@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript Quiz App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header>
+            <h1>Quiz Master</h1>
+
+            <button id="themeBtn">🌙 Dark Mode</button>
+        </header>
+
+        <!-- Start Screen -->
+        <section id="startScreen" class="screen">
+            <h2>Welcome to the Quiz!</h2>
+
+            <p>Test your knowledge of web development.</p>
+
+            <p>Total Questions: 10</p>
+
+            <p id="bestScore">Best Score: 0/10</p>
+
+            <button id="startBtn" class="main-btn">
+                Start Quiz
+            </button>
+        </section>
+
+        <!-- Quiz Screen -->
+        <section id="quizScreen" class="screen hidden">
+
+            <div class="quiz-info">
+                <span id="questionCounter">Question 1 of 10</span>
+                <span id="scoreDisplay">Score: 0</span>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="progress-container">
+                <div id="progressBar"></div>
+            </div>
+
+            <h2 id="questionText"></h2>
+
+            <!-- Options will be added using JavaScript -->
+            <div id="optionsContainer"></div>
+
+            <p id="feedback"></p>
+
+            <button id="nextBtn" class="main-btn" disabled>
+                Next Question
+            </button>
+
+        </section>
+
+        <!-- Result Screen -->
+        <section id="resultScreen" class="screen hidden">
+
+            <h2>Quiz Completed!</h2>
+
+            <h3 id="finalScore"></h3>
+
+            <p id="percentage"></p>
+
+            <p id="resultMessage"></p>
+
+            <h3>Answer Review</h3>
+
+            <div id="reviewContainer"></div>
+
+            <button id="restartBtn" class="main-btn">
+                Restart Quiz
+            </button>
+
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
